@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="magicnut.godotplugin.consentgdpr">
+
+    <application>
+        <meta-data
+            android:name="org.godotengine.plugin.v1.ConsentPlugin"
+            android:value="magicnut.godotplugin.consentgdpr.ConsentPlugin" />
+    </application>
+    /
+</manifest>
