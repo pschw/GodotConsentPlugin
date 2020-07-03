@@ -14,7 +14,7 @@ The main features of the plugin are:
 
 
 See the plugin in action:
-[![Demo video](http://example.com/exampl.png)](http://example.com/link "Demo video")
+[![Demo video](http://example.com/exampl.png)](https://youtu.be/PJ2H8ZK8O_w "Demo video")
 
 ## Adding the plugin to Godot 3.2.2
 1. Follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html) to configure, install and enable an Android Custom Build.
