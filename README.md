@@ -13,7 +13,7 @@ The main features of the plugin are:
 * Displaying a customizable form to obtain consent
 
 
-See the plugin in action:
+See the plugin in action:\
 [![Demo video](https://github.com/pschw/GodotConsentPlugin/blob/master/thumbnail_mini.jpg?raw=true)](https://youtu.be/PJ2H8ZK8O_w "Demo video")
 
 ## Adding the plugin to Godot 3.2.2
