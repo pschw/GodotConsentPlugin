@@ -46,19 +46,23 @@ The Google Consent SDK requires that the consent status is initialized/updated:
 ```
 In case of success the plugin emits the signal `consent_info_updated`. Failure to request the consent information makes the plugin emit the signal `failed_to_update_consent_information`.
 ```javascript
+enum CONSENT_STATUS {
+	UNKNOWN,
+	NON_PERSONALIZED,
+	PERSONALIZED
+}
+
 func consent_info_updated(consent_status):
-   # UNKNOWN
-   if consent_status == 0:
-      # Obtain user consent by showing a form
-      obtain_consent()
-   # NON_PERSONALIZED
-   elif consent_status == 1:
-      #configure AdMob implementation for non personalized apps
-      configure_admob_non_personalized()
-   # PERSONALIZED
-   elif consent_status == 2:
-      #configure AdMob implementation for personalized apps
-      configure_admob_personalized()
+	match consent_status:
+	    CONSENT_STATUS.UNKNOWN:
+            # Obtain user consent by showing a form
+            obtain_consent()
+		CONSENT_STATUS.NON_PERSONALIZED:
+            #configure AdMob implementation for non personalized apps
+            configure_admob_non_personalized()
+		CONSENT_STATUS.PERSONALIZED:
+            #configure AdMob implementation for personalized apps
+            configure_admob_personalized()
 
 func failed_to_update_consent_information(error_description):
    print(error_description)
