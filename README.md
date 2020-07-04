@@ -53,14 +53,14 @@ enum CONSENT_STATUS {
 }
 
 func consent_info_updated(consent_status):
-	match consent_status:
+    match consent_status:
 	    CONSENT_STATUS.UNKNOWN:
-            # Obtain user consent by showing a form
-            obtain_consent()
-		CONSENT_STATUS.NON_PERSONALIZED:
+	        # Obtain user consent by showing a form
+	        obtain_consent()
+        CONSENT_STATUS.NON_PERSONALIZED:
             #configure AdMob implementation for non personalized apps
             configure_admob_non_personalized()
-		CONSENT_STATUS.PERSONALIZED:
+        CONSENT_STATUS.PERSONALIZED:
             #configure AdMob implementation for personalized apps
             configure_admob_personalized()
 
