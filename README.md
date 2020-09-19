@@ -1,6 +1,6 @@
 
 Support my work:
-**Follow me on [Twitter](https://twitter.com/pascalschwenke) and add me on [LinkedIn](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)!**
+**Follow me on [Twitter](https://twitter.com/pascalschwenke) and add me on [LinkedIn](https://www.linkedin.com/in/pascal-schwenke-537a8a169/)!**
 
 
 # Consent plugin for Godot 3.2.3
@@ -14,7 +14,7 @@ The main features of the plugin are:
 
 
 See the plugin in action:\
-[![Demo video](https://github.com/pschw/GodotConsentPlugin/blob/master/thumbnail_mini.jpg?raw=true)](https://youtu.be/PJ2H8ZK8O_w "Demo video")
+[![Demo video](https://github.com/pschw/GodotConsentPlugin/blob/main/thumbnail_mini.jpg?raw=true)](https://youtu.be/PJ2H8ZK8O_w "Demo video")
 
 ## Adding the plugin to Godot 3.2.3
 1. Follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html) to configure, install and enable an Android Custom Build.
