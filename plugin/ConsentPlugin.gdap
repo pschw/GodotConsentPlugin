@@ -5,4 +5,4 @@ binary_type="local"
 binary="ConsentPlugin.release.aar"
 
 [dependencies]
-remote=["com.google.android.ads.consent:consent-library:1.0.6"]
+remote=["com.google.android.ads.consent:consent-library:1.0.8"]
