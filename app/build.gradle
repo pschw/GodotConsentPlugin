@@ -31,5 +31,5 @@ dependencies {
 }
 
 dependencies {
-    compileOnly project(":godot-lib.3.2.2.stable.release")
+    compileOnly project(":godot-lib.3.2.3.stable.release")
 }

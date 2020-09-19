@@ -1,4 +1,3 @@
-include ':godot-lib.3.2.2.stable.release'
+include ':godot-lib.3.2.3.stable.release'
 include ':consentGdpr'
-include ':app'
 rootProject.name = "consent"
