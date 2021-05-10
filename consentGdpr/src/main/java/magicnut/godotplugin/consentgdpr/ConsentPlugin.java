@@ -12,11 +12,10 @@ import com.google.ads.consent.ConsentStatus;
 import org.godotengine.godot.Godot;
 import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.SignalInfo;
+import org.godotengine.godot.plugin.UsedByGodot;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 
 import androidx.annotation.NonNull;
@@ -35,7 +34,7 @@ public class ConsentPlugin extends GodotPlugin {
      */
     public ConsentPlugin(Godot godot) {
         super(godot);
-        activity = godot;
+        activity = godot.getActivity();
         TestDevice testDevice = new TestDevice(activity);
         testDevice.setupTestDeviceIfDebugEnabled();
     }
@@ -45,6 +44,7 @@ public class ConsentPlugin extends GodotPlugin {
      *
      * @param publisherIds At least one publisher id from an admob account that has been verified.
      */
+    @UsedByGodot
     public void requestConsentInformation(String[] publisherIds) {
         Log.d(PLUGIN_NAME, "requestConsentInfo called");
         consentInformation = ConsentInformation.getInstance(activity);
@@ -75,6 +75,7 @@ public class ConsentPlugin extends GodotPlugin {
      * @param withNonPersonalizedAdsOption Display option to use only non personalized ads?
      * @param withAdFreeOption             Display form option to use the paid/ad free version of the app?
      */
+    @UsedByGodot
     public void buildConsentForm(String privacyUrl, final boolean withPersonalizedAdsOption, final boolean withNonPersonalizedAdsOption, final boolean withAdFreeOption) {
         Log.d(PLUGIN_NAME, "buildConsentForm called");
         try {
@@ -141,6 +142,7 @@ public class ConsentPlugin extends GodotPlugin {
     /**
      * Use this method to load the consent form after it has been build.
      */
+    @UsedByGodot
     public void loadConsentForm() {
         Log.d(PLUGIN_NAME, "LoadConsentForm called");
         activity.runOnUiThread(new Runnable() {
@@ -154,6 +156,7 @@ public class ConsentPlugin extends GodotPlugin {
     /**
      * Show the consent form after it has been loaded.
      */
+    @UsedByGodot
     public void showConsentForm() {
         Log.d(PLUGIN_NAME, "showConsentForm called");
         activity.runOnUiThread(new Runnable() {
@@ -185,21 +188,6 @@ public class ConsentPlugin extends GodotPlugin {
     @Override
     public String getPluginName() {
         return PLUGIN_NAME;
-    }
-
-    /**
-     * Return all the method names as list that can be called from godot side.
-     *
-     * @return
-     */
-    @NonNull
-    @Override
-    public List<String> getPluginMethods() {
-        return Arrays.asList(
-                "requestConsentInformation",
-                "buildConsentForm",
-                "loadConsentForm",
-                "showConsentForm");
     }
 
     /**

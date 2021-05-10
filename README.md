@@ -3,9 +3,9 @@ Support my work:
 **Follow me on [Twitter](https://twitter.com/pascalschwenke) and add me on [LinkedIn](https://www.linkedin.com/in/pascal-schwenke-537a8a169/)!**
 
 
-# Consent plugin for Godot 3.2.3
+# Consent plugin for Godot 3.3
 
-This plugin implements the [Google Consent SDK](https://developers.google.com/admob/android/eu-consent/) for [Godot 3.2.3](https://godotengine.org/). The [GDPR](https://gdpr.eu/) requires Google App developers to obtain user consent before displaying any ads served by AdMob or its ad technology providers.
+This plugin implements the [Google Consent SDK](https://developers.google.com/admob/android/eu-consent/) for [Godot 3.3](https://godotengine.org/). The [GDPR](https://gdpr.eu/) requires Google App developers to obtain user consent before displaying any ads served by AdMob or its ad technology providers.
 
 The main features of the plugin are:
 * Verifying that consent for personalized or non-personalized ads has been obtained
@@ -16,7 +16,7 @@ The main features of the plugin are:
 See the plugin in action:\
 [![Demo video](https://github.com/pschw/GodotConsentPlugin/blob/main/thumbnail_mini.jpg?raw=true)](https://youtu.be/PJ2H8ZK8O_w "Demo video")
 
-## Adding the plugin to Godot 3.2.3
+## Adding the plugin to Godot 3.3
 1. Follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html) to configure, install and enable an Android Custom Build.
 2. Download the consent plugin from the release tab.
 3. Extract the contents of ConsentPlugin.7z to `res://android/plugins`
